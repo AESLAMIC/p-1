@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  font-family: shabnam;
+}
+h1 {
+  font-family: shabnamb;
+}
+body {
+  background-color: #23272f;
+}
+h2,
+p {
+  direction: rtl;
+}
+.rtl {
+  direction: rtl;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.animate-spin {
+  animation: spin 9s linear infinite;
+}
+
+@font-face {
+  font-family: "shabnam";
+  src: local("shabnam"), url("../src/fonts/Shabnam.ttf") format("truetype");
+}
+@font-face {
+  font-family: "shabnamb";
+  src: local("shabnamb"),
+    url("../src/fonts/Shabnam-Bold.ttf") format("truetype");
+}
